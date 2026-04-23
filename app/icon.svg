@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="#FAF8F4"/>
+  <text
+    x="32"
+    y="46"
+    text-anchor="middle"
+    font-family="'IBM Plex Serif', Georgia, 'Times New Roman', serif"
+    font-size="48"
+    font-weight="500"
+    fill="#111111"
+    letter-spacing="-1"
+  >N</text>
+</svg>
