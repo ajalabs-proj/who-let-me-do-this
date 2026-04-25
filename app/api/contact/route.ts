@@ -1,6 +1,6 @@
 import { Resend } from "resend";
 
-const TO_EMAIL = "hi@nouriehair.com";
+const TO_EMAIL = "hello@nouriehair.com";
 const FROM_EMAIL =
   process.env.RESEND_FROM_EMAIL ?? "Nourie Site <onboarding@resend.dev>";
 
