@@ -30,7 +30,7 @@ export function Problem() {
             single most contaminated product category tested.
           </p>
           <p className="pt-2 border-t border-rule text-ink">
-            Nourie starts from a different premise: the contact window that has
+            Nourie™ starts from a different premise: the contact window that has
             been transferring contaminants can instead deliver chosen
             ingredients.
           </p>

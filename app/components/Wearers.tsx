@@ -26,22 +26,22 @@ const qa: { q: string; a: string[] }[] = [
     q: "Isn’t everyone saying their hair is “clinically tested” now?",
     a: [
       "The phrase is getting used a lot, and it does not always mean much. Usually it means one quick skin patch test. That is the bare minimum. It does not tell you what happens after two weeks of wear. It does not tell you what the material is doing to your scalp underneath.",
-      "We ran two trials. One to check that Nourie is safe against skin. One to actually measure what happens on your scalp while you wear it: moisture, inflammation, comfort. Not just a patch. Real wear.",
+      "We ran two trials. One to check that Nourie™ is safe against skin. One to actually measure what happens on your scalp while you wear it: moisture, inflammation, comfort. Not just a patch. Real wear.",
     ],
   },
   {
-    q: "So how is Nourie different?",
+    q: "So how is Nourie™ different?",
     a: [
-      "Nourie is not plastic. It is a new fiber made from plant-based materials, designed from the start to sit on your scalp.",
+      "Nourie™ is not plastic. It is a new fiber made from plant-based materials, designed from the start to sit on your scalp.",
       "Instead of leaking chemicals into your scalp, it does the opposite: it releases good things back (moisture and ingredients that protect your scalp) when your scalp needs them.",
-      "In our trials, people who wore Nourie felt more comfortable, and their scalps actually measured healthier than people wearing regular PVC hair.",
+      "In our trials, people who wore Nourie™ felt more comfortable, and their scalps actually measured healthier than people wearing regular PVC hair.",
     ],
   },
   {
     q: "What about banana hair and other plant-based options?",
     a: [
       "They skip the plastic, which is good. But raw plant fibers tend to be brittle. They snap at the knots, frizz in humidity, and do not hold up to washing.",
-      "Nourie is built to do both: be safe for your scalp and actually behave like hair you can braid, wash, and live in for weeks.",
+      "Nourie™ is built to do both: be safe for your scalp and actually behave like hair you can braid, wash, and live in for weeks.",
     ],
   },
 ];

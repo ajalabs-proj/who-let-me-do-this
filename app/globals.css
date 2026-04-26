@@ -97,8 +97,9 @@ table.spec thead th.nourie {
 }
 .pill:hover,
 .pill.active {
+  background: var(--color-accent);
   border-color: var(--color-accent);
-  color: var(--color-accent);
+  color: var(--color-base);
 }
 .pill .num {
   font-family: var(--font-mono);
@@ -107,7 +108,7 @@ table.spec thead th.nourie {
   letter-spacing: 0.08em;
 }
 .pill:hover .num,
-.pill.active .num { color: var(--color-accent); }
+.pill.active .num { color: var(--color-base); }
 
 .navwrap { transition: border-color .2s, background .2s; }
 .navwrap.scrolled {

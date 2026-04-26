@@ -8,7 +8,7 @@ const clinical: Item[] = [
   },
   {
     label: "TRIAL 02",
-    body: "Phase 1 efficacy trial for scalp health impact. Statistically significant correlation between comfort and TEWL biology on Nourie, with no corresponding correlation on the PVC comparator.",
+    body: "Phase 1 efficacy trial for scalp health impact. Statistically significant correlation between comfort and TEWL biology on Nourie™, with no corresponding correlation on the PVC comparator.",
   },
 ];
 const ip: Item[] = [
@@ -51,7 +51,7 @@ export function Investors() {
         <div className="md:col-span-7 space-y-6">
           <p>
             Aja Labs is a functional fiber laboratory and B2B manufacturing
-            platform. We design, manufacture, and clinically test Nourie, a
+            platform. We design, manufacture, and clinically test Nourie™, a
             fiber system for protective styling. Our commercial model supplies
             fiber technology to brands and professionals rather than competing
             with them at the consumer level.

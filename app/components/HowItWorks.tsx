@@ -71,7 +71,7 @@ export function HowItWorks() {
             The braiding hair on the market today is a contradiction. Wearers
             reach for it to protect their hair and care for their scalp. The
             material itself does the opposite. It irritates. It leaches. It is
-            engineered for cost, not for the body. Nourie is engineered for the
+            engineered for cost, not for the body. Nourie™ is engineered for the
             body. Every strand is built to do two things at once: behave like
             hair, and deliver active ingredients to the scalp underneath it.
             The nourishment is not coated onto the fiber. It is part of how
@@ -81,7 +81,7 @@ export function HowItWorks() {
         <div className="space-y-5">
           <div className="eyebrow">Responsive</div>
           <p>
-            Nourie responds to real-world wear conditions. When the scalp
+            Nourie™ responds to real-world wear conditions. When the scalp
             environment shifts, whether heat, pH, friction, or dryness, the
             fiber&rsquo;s surface adapts. It releases humectants,
             barrier-supporting compounds, and microbiome-aligned actives in

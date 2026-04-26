@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: "Nourie™ by Aja Labs",
     description: "Functional fiber technology for prolonged scalp contact.",
     url: "https://nouriehair.com",
-    siteName: "Nourie",
+    siteName: "Nourie™",
     type: "website",
   },
   twitter: {

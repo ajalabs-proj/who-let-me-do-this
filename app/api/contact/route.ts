@@ -1,7 +1,7 @@
 import { Resend } from "resend";
 
 const TO_EMAIL = "hello@nouriehair.com";
-const FROM_EMAIL = "Nourie <hello@nouriehair.com>";
+const FROM_EMAIL = "Nourie™ <hello@nouriehair.com>";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
