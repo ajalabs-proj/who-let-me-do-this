@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" fill="#FAF8F4"/>
+  <rect width="64" height="64" fill="#FBFBF8"/>
   <text
     x="32"
     y="46"
@@ -7,7 +7,7 @@
     font-family="'IBM Plex Serif', Georgia, 'Times New Roman', serif"
     font-size="48"
     font-weight="500"
-    fill="#111111"
+    fill="#0E1B2C"
     letter-spacing="-1"
   >N</text>
 </svg>

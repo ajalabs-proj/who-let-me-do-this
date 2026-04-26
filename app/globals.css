@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-  --color-base: #FAF8F4;
-  --color-ink: #111111;
-  --color-mute: #888888;
-  --color-rule: #DDDDDD;
-  --color-bone: #F1EEE6;
+  --color-base: #FBFBF8;
+  --color-ink: #0E1B2C;
+  --color-mute: #6B7480;
+  --color-rule: #D8D8D2;
+  --color-bone: #F0F0EA;
   --color-accent: #2D6A5A;
 
   --font-head: var(--font-plex-serif), "IBM Plex Serif", ui-serif, serif;
@@ -73,11 +73,11 @@ table.spec td:first-child { font-weight: 500; width: 22%; color: var(--color-ink
 table.spec td.nourie {
   color: var(--color-accent);
   font-weight: 500;
-  background: #fff !important;
+  background: #FBFBF8 !important;
 }
 table.spec thead th.nourie {
   color: var(--color-accent);
-  background: #fff;
+  background: #FBFBF8;
 }
 
 .pill {
@@ -107,8 +107,8 @@ table.spec thead th.nourie {
 
 .navwrap { transition: border-color .2s, background .2s; }
 .navwrap.scrolled {
-  border-bottom: 1px solid #E8E4DB;
-  background: rgba(250, 248, 244, 0.92);
+  border-bottom: 1px solid #E4E4DE;
+  background: rgba(251, 251, 248, 0.92);
   backdrop-filter: saturate(160%) blur(8px);
 }
 
@@ -133,14 +133,14 @@ a.link-q:hover { color: var(--color-accent); border-color: var(--color-accent); 
   transition: border-color .15s;
 }
 .field:focus { outline: none; border-color: var(--color-accent); }
-.field::placeholder { color: #BBB; }
+.field::placeholder { color: #B6B6AE; }
 
 .btn {
   display: inline-flex;
   align-items: center;
   gap: 10px;
   background: var(--color-accent);
-  color: #fff;
+  color: #FBFBF8;
   padding: 14px 22px;
   font-size: 15px;
   border: 0;
@@ -162,7 +162,7 @@ a.link-q:hover { color: var(--color-accent); border-color: var(--color-accent); 
   top: 8px;
   padding: 10px 14px;
   background: var(--color-ink);
-  color: #fff;
+  color: #FBFBF8;
   font-family: var(--font-mono);
   font-size: 11px;
   letter-spacing: 0.1em;
