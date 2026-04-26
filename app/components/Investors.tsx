@@ -21,10 +21,9 @@ const traction: Item[] = [
     body: "Active commercial partnership with a major fiber manufacturer. Details under NDA.",
   },
   {
-    label: "DISTRIBUTION",
-    body: "Wholesale through Ultra Standard Distributors.",
+    label: "PIPELINE",
+    body: "Brand partnership pipeline and launch in development.",
   },
-  { label: "PIPELINE", body: "Brand partnership pipeline in development." },
 ];
 
 function ItemList({ items }: { items: Item[] }) {
