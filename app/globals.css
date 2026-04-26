@@ -76,12 +76,24 @@ table.spec td:nth-child(n + 2) { width: 26%; }
 table.spec td:first-child { font-weight: 500; color: var(--color-ink); }
 table.spec td.nourie {
   color: var(--color-accent);
-  font-weight: 500;
+  font-weight: 600;
   background: #FBFBF8 !important;
+  border-left: 2px solid var(--color-accent);
+  border-right: 2px solid var(--color-accent);
+}
+table.spec tbody tr:first-child td.nourie {
+  border-top: 2px solid var(--color-accent);
+}
+table.spec tbody tr:last-child td.nourie {
+  border-bottom: 2px solid var(--color-accent);
 }
 table.spec thead th.nourie {
-  color: var(--color-accent);
-  background: #FBFBF8;
+  color: #FBFBF8;
+  background: var(--color-accent);
+  border-left: 2px solid var(--color-accent);
+  border-right: 2px solid var(--color-accent);
+  border-top: 2px solid var(--color-accent);
+  border-bottom: 1px solid var(--color-accent);
 }
 
 .pill {
