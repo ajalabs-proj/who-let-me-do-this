@@ -61,27 +61,31 @@ export function HowItWorks() {
   return (
     <Section num="02" eyebrow="The system" id="how" bg="bg-bone">
       <h2 className="font-head h-section max-w-[22ch]">
-        System, not coating
+        Built to deliver, not to leach
       </h2>
 
       <div className="mt-10 grid md:grid-cols-3 gap-10">
         <div className="space-y-5">
           <div className="eyebrow">Integrated</div>
           <p>
-            Nourie is not fiber plus a topical layer. It is a single integrated
-            system: a biopolymer-based fiber core paired with a proprietary
-            functional coating that delivers active ingredients through
-            controlled, responsive release.
+            The braiding hair on the market today is a contradiction. Wearers
+            reach for it to protect their hair and care for their scalp. The
+            material itself does the opposite. It irritates. It leaches. It is
+            engineered for cost, not for the body. Nourie is engineered for the
+            body. Every strand is built to do two things at once: behave like
+            hair, and deliver active ingredients to the scalp underneath it.
+            The nourishment is not coated onto the fiber. It is part of how
+            the fiber was designed.
           </p>
         </div>
         <div className="space-y-5">
           <div className="eyebrow">Responsive</div>
           <p>
-            The system responds to real-world wear conditions. When the scalp
-            environment shifts (heat, pH, friction, dryness), the coating
-            adapts. It releases humectants, barrier-supporting compounds, and
-            microbiome-aligned actives in response to need, not on a fixed
-            schedule.
+            Nourie responds to real-world wear conditions. When the scalp
+            environment shifts, whether heat, pH, friction, or dryness, the
+            fiber&rsquo;s surface adapts. It releases humectants,
+            barrier-supporting compounds, and microbiome-aligned actives in
+            response to need, not on a fixed schedule.
           </p>
         </div>
         <div className="space-y-5">
