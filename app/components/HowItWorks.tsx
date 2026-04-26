@@ -3,57 +3,57 @@ import { Section } from "./Section";
 const rows: [string, string, string, string][] = [
   [
     "Base material",
+    "Bio-derived polymer, selected for biocompatibility",
     "Polyvinyl chloride or modacrylic polymer",
     "Processed cellulosic plant fiber",
-    "Bio-derived polymer, selected for biocompatibility",
   ],
   [
     "Manufacturing oversight",
-    "Imported.",
-    "Imported.",
     "Made in the USA. Team on site. Key steps in FDA GMP-registered facilities.",
+    "Imported.",
+    "Imported.",
   ],
   [
     "Designed for skin contact",
+    "Yes. Originally developed for prolonged scalp contact.",
     "No. Originally developed for plumbing and industrial textiles.",
     "No. Originally developed for rope and woven textiles.",
-    "Yes. Originally developed for prolonged scalp contact.",
   ],
   [
     "Active ingredient delivery",
-    "None",
-    "None",
     "Controlled responsive release",
+    "None",
+    "None",
   ],
   [
     "Scalp barrier support",
+    "Actively supports barrier integrity",
     "Degrades barrier over time",
     "Neutral to mildly irritating",
-    "Actively supports barrier integrity",
   ],
   [
     "ACV soak required",
+    "Not required",
     "Common practice (partial surface strip only)",
     "Sometimes recommended",
-    "Not required",
   ],
   [
     "Clinical testing",
+    "Pre-trial hRIPT (58 participants, zero adverse events) plus Phase 1 efficacy trial measuring scalp biology under wear conditions: transepidermal water loss (TEWL), inflammatory biomarkers, and self-reported comfort, against a PVC comparator.",
     "Typically none. Recent category entrants may conduct a basic hRIPT only — a short-duration patch test that does not measure wear-over-time chemistry or scalp biology.",
     "Typically none.",
-    "Pre-trial hRIPT (58 participants, zero adverse events) plus Phase 1 efficacy trial measuring scalp biology under wear conditions: transepidermal water loss (TEWL), inflammatory biomarkers, and self-reported comfort, against a PVC comparator.",
   ],
   [
     "Tensile and knot performance",
+    "Engineered to approximate human hair",
     "Adequate",
     "Often poor (brittle, breaks at knots)",
-    "Engineered to approximate human hair",
   ],
   [
     "Regulatory status",
+    "FDA GRAS-listed materials",
     "No GRAS listing for dermal contact",
     "Varies",
-    "FDA GRAS-listed materials",
   ],
 ];
 
@@ -106,18 +106,18 @@ export function HowItWorks() {
             <thead>
               <tr>
                 <th scope="col">Property</th>
+                <th scope="col" className="nourie">Nourie™</th>
                 <th scope="col">PVC / Modacrylic (industry standard)</th>
                 <th scope="col">Plant-based fiber (banana, etc.)</th>
-                <th scope="col" className="nourie">Nourie™</th>
               </tr>
             </thead>
             <tbody>
               {rows.map((row, i) => (
                 <tr key={i}>
                   <td>{row[0]}</td>
-                  <td>{row[1]}</td>
+                  <td className="nourie">{row[1]}</td>
                   <td>{row[2]}</td>
-                  <td className="nourie">{row[3]}</td>
+                  <td>{row[3]}</td>
                 </tr>
               ))}
             </tbody>
