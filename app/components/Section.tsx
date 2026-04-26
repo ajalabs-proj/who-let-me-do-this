@@ -14,7 +14,7 @@ export function Section({
   bg?: string;
 }) {
   return (
-    <section id={id} className={`${bg ?? ""} py-[100px] md:py-[120px]`}>
+    <section id={id} className={`${bg ?? ""} py-[72px] md:py-[88px]`}>
       <div className="mx-auto max-w-[1240px] px-6 md:px-10">
         <div className="flex items-baseline gap-6 mb-10">
           <div className="sec-num shrink-0">§ {num}</div>
