@@ -70,8 +70,15 @@ table.spec thead th {
 }
 table.spec tbody tr:nth-child(even) td { background: var(--color-bone); }
 table.spec td:first-child { font-weight: 500; width: 22%; color: var(--color-ink); }
-table.spec td.nourie,
-table.spec thead th.nourie { color: var(--color-accent); font-weight: 500; }
+table.spec td.nourie {
+  color: var(--color-accent);
+  font-weight: 500;
+  background: #fff !important;
+}
+table.spec thead th.nourie {
+  color: var(--color-accent);
+  background: #fff;
+}
 
 .pill {
   display: inline-flex;
