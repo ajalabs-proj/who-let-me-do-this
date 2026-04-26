@@ -51,7 +51,7 @@ body {
   letter-spacing: 0.1em;
 }
 
-table.spec { width: 100%; border-collapse: collapse; font-size: 15px; }
+table.spec { width: 100%; border-collapse: collapse; font-size: 15px; table-layout: fixed; }
 table.spec th,
 table.spec td {
   border: 1px solid var(--color-rule);
@@ -69,7 +69,11 @@ table.spec thead th {
   font-weight: 500;
 }
 table.spec tbody tr:nth-child(even) td { background: var(--color-bone); }
-table.spec td:first-child { font-weight: 500; width: 22%; color: var(--color-ink); }
+table.spec th:first-child,
+table.spec td:first-child { width: 22%; }
+table.spec th:nth-child(n + 2),
+table.spec td:nth-child(n + 2) { width: 26%; }
+table.spec td:first-child { font-weight: 500; color: var(--color-ink); }
 table.spec td.nourie {
   color: var(--color-accent);
   font-weight: 500;
