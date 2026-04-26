@@ -36,7 +36,7 @@ export function Evidence() {
         </p>
       </div>
 
-      <div className="mt-16 grid md:grid-cols-2 border-t border-ink/80">
+      <div className="mt-16 grid md:grid-cols-3 border-t border-ink/80">
         <div className="py-10 md:py-12 md:pr-12 md:border-r border-rule border-b md:border-b-0">
           <div className="flex items-baseline justify-between mb-6">
             <div className="sec-num">Trial 01</div>
@@ -74,7 +74,7 @@ export function Evidence() {
           </p>
         </div>
 
-        <div className="py-10 md:py-12 md:pl-12">
+        <div className="py-10 md:py-12 md:px-12 md:border-r border-rule border-b md:border-b-0">
           <div className="flex items-baseline justify-between mb-6">
             <div className="sec-num">Trial 02</div>
             <div className="font-mono text-[11px] text-mute tracking-[0.08em]">
@@ -122,6 +122,23 @@ export function Evidence() {
             comfort and TEWL on Nourie, with no corresponding correlation on
             the PVC comparator. Inflammatory biomarker data complements the
             barrier and subjective signals.
+          </p>
+        </div>
+
+        {/* Trial 3 — placeholder */}
+        <div className="py-10 md:py-12 md:pl-12 md:border-l border-rule">
+          <div className="flex items-baseline justify-between mb-6">
+            <div className="sec-num">Trial 03</div>
+            <div className="font-mono text-[11px] text-mute tracking-[0.08em]">
+              ON THE HORIZON
+            </div>
+          </div>
+          <div className="eyebrow mb-2">Phase 2 efficacy trial</div>
+          <h3 className="font-head text-[28px] md:text-[34px] leading-[1.1] max-w-[22ch]">
+            IRB-approved Phase 2 efficacy trial in development.
+          </h3>
+          <p className="mt-6 text-[16px] text-ink/85">
+            Details when ready.
           </p>
         </div>
       </div>

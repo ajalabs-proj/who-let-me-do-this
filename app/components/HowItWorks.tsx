@@ -4,10 +4,21 @@ const rows: [string, string, string, string][] = [
   [
     "Base material",
     "Polyvinyl chloride or modacrylic polymer",
-    "Raw cellulosic plant fiber",
+    "Processed cellulosic plant fiber",
     "Bio-derived polymer, selected for biocompatibility",
   ],
-  ["Designed for skin contact", "No", "No", "Yes"],
+  [
+    "Manufacturing oversight",
+    "Imported.",
+    "Imported.",
+    "Made in the USA. Team on site. Key steps in FDA GMP-registered facilities.",
+  ],
+  [
+    "Designed for skin contact",
+    "No. Originally developed for plumbing and industrial textiles.",
+    "No. Originally developed for rope and woven textiles.",
+    "Yes. Originally developed for prolonged scalp contact.",
+  ],
   [
     "Active ingredient delivery",
     "None",
