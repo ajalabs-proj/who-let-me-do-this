@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "sync-subscribers": "node --env-file=.env scripts/export-subscribers.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
