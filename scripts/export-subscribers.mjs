@@ -11,7 +11,8 @@ import { execFile } from "node:child_process";
 
 const API_KEY = process.env.RESEND_API_KEY;
 const AUDIENCE_ID = process.env.RESEND_AUDIENCE_ID;
-const SUBSTACK_URL = "https://thenouriefiles.substack.com";
+const SUBSTACK_SUBSCRIBERS_URL =
+  "https://thenouriefiles.substack.com/publish/subscribers";
 const OUT_PATH = join(homedir(), "Desktop", "nourie-subscribers.csv");
 
 function fail(msg) {
@@ -53,12 +54,12 @@ const rows = [
 writeFileSync(OUT_PATH, rows.join("\n") + "\n");
 
 console.log(`\n✓ Wrote ${contacts.length} subscriber(s) to:\n  ${OUT_PATH}\n`);
-console.log("Now upload it in Substack:");
-console.log("  1. Open Substack → Dashboard icon → Subscribers");
-console.log("  2. All subscribers → Add subscribers → Add subscribers by upload");
-console.log("  3. Drop in the file Finder just revealed");
-console.log("  4. Map email→email, first_name→name; tick opt-in; pick Free; confirm\n");
+console.log("Substack is opening on the Subscribers page. To finish:");
+console.log("  1. Click Add subscribers → Add subscribers by upload");
+console.log("  2. Drop in the file Finder just revealed");
+console.log("  3. Map email→email, first_name→name; tick opt-in; pick Free; confirm\n");
 
-// Reveal the CSV in Finder and open Substack so the upload is one drag away.
+// Reveal the CSV in Finder and open Substack's Subscribers page directly,
+// so the upload is one drag away with no dashboard navigation.
 execFile("open", ["-R", OUT_PATH]);
-execFile("open", [SUBSTACK_URL]);
+execFile("open", [SUBSTACK_SUBSCRIBERS_URL]);
