@@ -7,6 +7,7 @@ import { Evidence } from "./components/Evidence";
 import { Brands } from "./components/Brands";
 import { Wearers } from "./components/Wearers";
 import { Investors } from "./components/Investors";
+import { Subscribe } from "./components/Subscribe";
 import { Contact } from "./components/Contact";
 
 export default function Page() {
@@ -22,6 +23,7 @@ export default function Page() {
         <Brands />
         <Wearers />
         <Investors />
+        <Subscribe />
         <Contact />
       </main>
     </>

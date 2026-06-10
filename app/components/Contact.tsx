@@ -8,7 +8,6 @@ type Status = "idle" | "sending" | "sent" | "error";
 export function Contact() {
   const [status, setStatus] = useState<Status>("idle");
   const [error, setError] = useState<string | null>(null);
-  const [sentWithMessage, setSentWithMessage] = useState(false);
 
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -23,7 +22,6 @@ export function Contact() {
       message: String(data.get("message") ?? ""),
       company: String(data.get("company") ?? ""),
     };
-    const hasMessage = payload.message.trim().length > 0;
 
     try {
       const res = await fetch("/api/contact", {
@@ -35,7 +33,6 @@ export function Contact() {
         const body = await res.json().catch(() => null);
         throw new Error(body?.error ?? `Request failed (${res.status})`);
       }
-      setSentWithMessage(hasMessage);
       setStatus("sent");
     } catch (err) {
       const msg = err instanceof Error ? err.message : "Something went wrong.";
@@ -52,12 +49,11 @@ export function Contact() {
       <div className="mx-auto max-w-[1240px] px-6 md:px-10">
         <div className="grid md:grid-cols-12 gap-10">
           <div className="md:col-span-5">
-            <div className="sec-num mb-6">§ 07</div>
+            <div className="sec-num mb-6">§ 08</div>
             <h2 className="font-head h-section">Contact</h2>
             <p className="mt-6 text-ink/80 max-w-[40ch]">
-              Drop your email to follow Nourie&rsquo;s progress in The Nourie
-              Files. Add a note for partnership inquiries, diligence requests,
-              and press — one channel.
+              Partnership inquiries, diligence requests, and press. One
+              channel.
             </p>
           </div>
 
@@ -98,14 +94,15 @@ export function Contact() {
                   </div>
                   <div>
                     <label htmlFor="contact-message" className="eyebrow block mb-1">
-                      Message <span className="text-ink/50">(optional)</span>
+                      Message
                     </label>
                     <textarea
                       id="contact-message"
                       name="message"
+                      required
                       rows={4}
                       className="field resize-none"
-                      placeholder="Optional — a few sentences about what you're working on."
+                      placeholder="A few sentences about what you're working on."
                     />
                   </div>
                   {/* Honeypot — hidden from humans, only bots fill it */}
@@ -130,7 +127,7 @@ export function Contact() {
                     className="btn"
                     disabled={status === "sending"}
                   >
-                    {status === "sending" ? "Sending…" : "Sign up"} <Arrow />
+                    {status === "sending" ? "Sending…" : "Send message"} <Arrow />
                   </button>
                 </div>
                 {status === "error" && error && (
@@ -144,13 +141,10 @@ export function Contact() {
               </>
             ) : (
               <div className="py-10" role="status" aria-live="polite">
-                <div className="eyebrow mb-3">
-                  {sentWithMessage ? "Received" : "You're in"}
-                </div>
+                <div className="eyebrow mb-3">Received</div>
                 <p className="font-head text-[28px] leading-tight max-w-[28ch]">
-                  {sentWithMessage
-                    ? "Thank you. You're on the list, and we'll respond from a named inbox within two business days."
-                    : "You're on the list. Look out for The Nourie Files in your inbox."}
+                  Thank you. We will respond from a named inbox within two
+                  business days.
                 </p>
               </div>
             )}
