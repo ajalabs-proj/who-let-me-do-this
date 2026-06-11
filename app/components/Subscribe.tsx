@@ -36,8 +36,9 @@ export function Subscribe() {
               something worth sending.
             </p>
           </div>
-          <div className="md:col-span-7 md:pl-10 md:border-l border-rule">
+          <div className="md:col-span-7 md:pl-10 md:border-l border-rule flex items-center justify-center md:justify-start">
             <div
+              className="w-full max-w-[440px]"
               data-supascribe-embed-id={SUPASCRIBE_EMBED_ID}
               data-supascribe-subscribe=""
             />
