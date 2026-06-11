@@ -2,41 +2,16 @@
 
 import { useEffect } from "react";
 
-declare global {
-  interface Window {
-    CustomSubstackWidget?: {
-      substackUrl: string;
-      placeholder: string;
-      buttonText: string;
-      theme: string;
-      colors: {
-        primary: string;
-        input: string;
-        email: string;
-        text: string;
-      };
-    };
-  }
-}
+const SUPASCRIBE_LOADER =
+  "https://js.supascribe.com/v1/loader/sCDq2h2OOVhc7CPryRt1XD2QXra2.js";
+const SUPASCRIBE_EMBED_ID = "347273884143";
 
 export function Subscribe() {
   useEffect(() => {
-    // Configure the SubstackAPI widget BEFORE its script runs.
-    window.CustomSubstackWidget = {
-      substackUrl: "thenouriefiles.substack.com",
-      placeholder: "you@company.com",
-      buttonText: "Subscribe",
-      theme: "custom",
-      colors: {
-        primary: "#2D6A5A", // accent (button bg)
-        input: "transparent", // input bg
-        email: "#0E1B2C", // input text
-        text: "#FBFBF8", // button text
-      },
-    };
-
+    // Load Supascribe's loader after the embed div is in the DOM. The script
+    // scans for [data-supascribe-embed-id] elements and mounts the widget.
     const script = document.createElement("script");
-    script.src = "https://substackapi.com/widget.js";
+    script.src = SUPASCRIBE_LOADER;
     script.async = true;
     document.body.appendChild(script);
 
@@ -62,7 +37,10 @@ export function Subscribe() {
             </p>
           </div>
           <div className="md:col-span-7 md:pl-10 md:border-l border-rule">
-            <div id="custom-substack-embed" />
+            <div
+              data-supascribe-embed-id={SUPASCRIBE_EMBED_ID}
+              data-supascribe-subscribe=""
+            />
           </div>
         </div>
       </div>
